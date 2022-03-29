@@ -37,11 +37,11 @@ jobs:
         MYNAME: ${{github.repository_owner}}          
       run: |
         cd _book
-        git config --global user.email "${MYEMAIL}"
-        git config --global user.name "${MYNAME}"
+        git config --global user.email "1740086582@qq.com"
+        git config --global user.name "wj"
         git init
-        git remote add origin https://${REF}
+        git remote add origin git@github.com:guoqiguantou/gitbookTest.git
         git add . 
-        git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"
+        git commit -m "Updated For Github Pages"
         git branch -M main
-        git push --force --quiet "https://${TOKEN}@${REF}" main:gh-pages
+        git push --force --quiet "git@github.com:guoqiguantou/gitbookTest.git" main:gh-pages
