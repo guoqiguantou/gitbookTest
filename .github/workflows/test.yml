@@ -1,4 +1,4 @@
-name: auto-generate-gitbook
+name: auto-generate-gitbook         #文件名
 on:                                 #在main分支上进行push时触发  
   push:
     branches:
